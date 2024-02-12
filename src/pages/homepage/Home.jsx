@@ -1,7 +1,9 @@
 "./home.css"
-import { Navbar,Balancebox,Balancechart} from "../../components/index"
+import { Navbar,Balancebox,Balancechart,Balancedetails,Transactionmodal} from "../../components/index"
+import { useModal } from "../../context/index"
 export const Home=()=>{
-
+//modal
+const {modal} =useModal();
     return(
         <div className="Home-container d-flex dir-col justify-center ">
             <Navbar/>
@@ -9,7 +11,10 @@ export const Home=()=>{
             <Balancebox/>
             <Balancechart/>
             </div>
-
+            <div>
+            <Balancedetails/>
+            {modal &&<Transactionmodal/>}
+            </div>
         </div>
     )
 }

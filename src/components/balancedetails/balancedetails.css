@@ -1,3 +1,21 @@
 .balancedetails-container{
     background-color: rgb(226, 221, 221);
+    min-width: 100vh;
+    min-height: 40vh;
+}
+
+.income-container{
+    background-color:rgb(2, 70, 2);
+    color: white;
+    min-height: 2rem;
+    padding: 6px;
+    margin: 10px;
+}
+
+.expense-container{
+    background-color:rgb(134, 10, 10);
+    color: white;
+    min-height: 2rem;
+    padding: 6px;
+    margin: 10px;
 }

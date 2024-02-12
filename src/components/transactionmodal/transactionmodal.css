@@ -1,0 +1,55 @@
+.transaction-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .transaction-form form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .transaction-form input,
+  .transaction-form select {
+    flex: 1;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .transaction-form input:focus,
+  .transaction-form select:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px #007bff;
+  }
+  
+  .transaction-form .add-button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .transaction-form .add-button:hover {
+    background-color: #0069d9;
+  }
+  
+  .transaction-form .add-button:disabled {
+    background-color: #c0c0c0;
+    cursor: not-allowed;
+  }
