@@ -1,0 +1,99 @@
+/* root properties */
+:root{
+  --primary-color: rgb(3, 5, 95);
+  --secondary-color:rgb(94, 9, 9);
+  --border-color:rgb(94, 9, 9);
+  --shadow-color:rgb(131, 131, 131);
+}
+
+/* css reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility css */
+.d-flex{
+  display: flex;
+}
+
+.dir-col{
+  flex-direction: column;
+}
+
+.dir-row{
+  flex-direction: row;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-space{
+  justify-content: space-between;
+}
+
+.gap-m{
+gap:2rem
+}
+
+.gap-s{
+  gap:1rem
+}
+
+.gap-l{
+  gap:4rem
+}
+
+.pointer{
+cursor: pointer;
+}
+
+.text-col{
+  color: var(--primary-color);
+}
+
+.text-bg-col{
+  color: var(--secondary-color);
+}
+
+.bg-col{
+  background-color: var(--secondary-color);
+}
+
+.border{
+  border:2px solid var(--border-color)
+}
+
+.shadow{
+  box-shadow: 2px 3px 2px var(--shadow-color);
+}
+
+.text-x{
+  font-size: 0.8rem;
+}
+
+.text-m{
+  font-size: 1.2rem;
+}
+
+.text-l{
+  font-size: 2.5rem;
+}
+
+.padding-s{
+  padding: 0.8rem;
+}
+
+.padding-m{
+  padding: 3.2rem;
+}
+
+.padding-l{
+  padding: 5rem;
+}
+
+.text-center{
+  text-align: center;
+}
