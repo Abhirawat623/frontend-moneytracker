@@ -2,7 +2,8 @@
 :root{
   --primary-color: rgb(3, 5, 95);
   --secondary-color:rgb(94, 9, 9);
-  --border-color:rgb(94, 9, 9);
+  --border-color:rgb(22, 4, 4);
+  --hover-color: rgb(123, 125, 241);
   --shadow-color:rgb(131, 131, 131);
 }
 
@@ -28,6 +29,10 @@
 
 .justify-center{
   justify-content: center;
+}
+
+.items-center{
+align-items: center;
 }
 
 .justify-space{
@@ -67,19 +72,19 @@ cursor: pointer;
 }
 
 .shadow{
-  box-shadow: 2px 3px 2px var(--shadow-color);
+  box-shadow: 1px 4px 2px var(--shadow-color);
 }
 
-.text-x{
-  font-size: 0.8rem;
-}
-
-.text-m{
+.text-s{
   font-size: 1.2rem;
 }
 
+.text-m{
+  font-size: 2rem;
+}
+
 .text-l{
-  font-size: 2.5rem;
+  font-size: 2.8rem;
 }
 
 .padding-s{
@@ -96,4 +101,11 @@ cursor: pointer;
 
 .text-center{
   text-align: center;
+}
+
+.bold{
+ font-weight: bolder;
+}
+.round{
+  border-radius: 5px;
 }

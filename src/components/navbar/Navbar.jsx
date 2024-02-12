@@ -1,10 +1,11 @@
-import {Link} from "react-router-dom"
+import "./navbar.css"
 export const Navbar=()=>{
     return(
-        <box className="navbar-container d-flex dir-row
+        <box className="navbar-container d-flex dir-row items-center
         shadow justify-space padding-s justify-center">
             <h2 className="text-col text-l">Money Tracker</h2>
-            <Link to="/login"><div className="text-bg-col text-m ">Login</div></Link>
+         <div className="text-bg-col text-s border padding-s 
+        trans-box round pointer">Add Transaction</div>
             </box>
      
     )
