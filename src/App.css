@@ -1,7 +1,6 @@
 /* root properties */
 :root{
-  --primary-color: rgb(3, 5, 95);
-  --secondary-color:rgb(94, 9, 9);
+  --primary-color: #3a4750;
   --border-color:rgb(22, 4, 4);
   --hover-color: rgb(123, 125, 241);
   --shadow-color:rgb(131, 131, 131);
@@ -68,7 +67,7 @@ cursor: pointer;
 }
 
 .border{
-  border:2px solid var(--border-color)
+  border:2px solid #ccc;
 }
 
 .shadow{

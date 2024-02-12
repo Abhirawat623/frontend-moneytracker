@@ -10,7 +10,7 @@ export const Transactionmodal=()=>{
       <option value="income">Income</option>
       <option value="expense">Expense</option>
     </select>
-    <button type="submit" className="add-button">Add</button>
+    <button type="submit" className="add-button"><h2>+</h2></button>
   </form>
 </div>
     )

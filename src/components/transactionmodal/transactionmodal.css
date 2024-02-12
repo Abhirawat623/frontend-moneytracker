@@ -3,15 +3,21 @@
     justify-content: center;
     align-items: center;
     height: 100px;
+    margin: auto auto;
+    position: absolute;
+    top:-0.7rem;
+    left: 26rem;
   }
   
   .transaction-form form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 600px;
     height: 50px;
+    gap: 5px;
     border: 1px solid #ccc;
+    background-color: #3B384D;
     border-radius: 5px;
     padding: 10px;
     box-sizing: border-box;
@@ -32,16 +38,19 @@
   .transaction-form select:focus {
     outline: none;
     box-shadow: 0 0 2px 1px #007bff;
+ 
   }
   
-  .transaction-form .add-button {
-    width: 100px;
-    height: 40px;
+  .add-button {
+    min-width: 50px;
+    height: 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #007bff;
     color: #fff;
+    text-align: center;
     font-size: 16px;
+   
     cursor: pointer;
   }
   

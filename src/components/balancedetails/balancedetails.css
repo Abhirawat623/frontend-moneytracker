@@ -5,7 +5,7 @@
 }
 
 .income-container{
-    background-color:rgb(2, 70, 2);
+    background-color:rgb(39, 109, 39);
     color: white;
     min-height: 2rem;
     padding: 6px;
@@ -13,7 +13,7 @@
 }
 
 .expense-container{
-    background-color:rgb(134, 10, 10);
+    background-color:rgb(148, 38, 38);
     color: white;
     min-height: 2rem;
     padding: 6px;
