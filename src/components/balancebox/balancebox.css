@@ -1,13 +1,13 @@
-.balance-container{
-   margin:2rem 5rem;
-   background: rgb(226, 221, 221);
-   width: 80vh;
-   height: 44vh;
+.balance-container {
+  margin: 2rem 5rem;
+  background: rgb(226, 221, 221);
+  width: 80vh;
+  height: 44vh;
 }
 
-.expence-buttons{
-    color: black;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    text-align: center;
+.expence-buttons {
+  color: black;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  text-align: center;
 }

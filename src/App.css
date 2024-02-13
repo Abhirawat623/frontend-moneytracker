@@ -1,112 +1,112 @@
 @import url("./components/transactionmodal/transactionmodal.css");
 
 /* root properties */
-:root{
+:root {
   --primary-color: ;
-  --border-color:rgb(22, 4, 4);
-  --hover-color:#3a4750;
-  --shadow-color:rgb(131, 131, 131);
+  --border-color: rgb(22, 4, 4);
+  --hover-color: #3a4750;
+  --shadow-color: rgb(131, 131, 131);
 }
 
 /* css reset */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* utility css */
-.d-flex{
+.d-flex {
   display: flex;
 }
 
-.dir-col{
+.dir-col {
   flex-direction: column;
 }
 
-.dir-row{
+.dir-row {
   flex-direction: row;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.items-center{
-align-items: center;
+.items-center {
+  align-items: center;
 }
 
-.justify-space{
+.justify-space {
   justify-content: space-between;
 }
 
-.gap-m{
-gap:2rem
+.gap-m {
+  gap: 2rem;
 }
 
-.gap-s{
-  gap:1rem
+.gap-s {
+  gap: 1rem;
 }
 
-.gap-l{
-  gap:4rem
+.gap-l {
+  gap: 4rem;
 }
 
-.pointer{
-cursor: pointer;
+.pointer {
+  cursor: pointer;
 }
 
-.text-col{
+.text-col {
   color: var(--primary-color);
 }
 
-.text-bg-col{
+.text-bg-col {
   color: var(--secondary-color);
 }
 
-.bg-col{
+.bg-col {
   background-color: var(--secondary-color);
 }
 
-.border{
-  border:2px solid #ccc;
+.border {
+  border: 2px solid #ccc;
 }
 
-.shadow{
+.shadow {
   box-shadow: 1px 4px 2px var(--shadow-color);
 }
 
-.text-s{
+.text-s {
   font-size: 1.2rem;
 }
 
-.text-m{
+.text-m {
   font-size: 2rem;
 }
 
-.text-l{
+.text-l {
   font-size: 2.8rem;
 }
 
-.padding-s{
+.padding-s {
   padding: 0.8rem;
 }
 
-.padding-m{
+.padding-m {
   padding: 3.2rem;
 }
 
-.padding-l{
+.padding-l {
   padding: 5rem;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.bold{
- font-weight: bolder;
+.bold {
+  font-weight: bolder;
 }
-.round{
+.round {
   border-radius: 5px;
 }

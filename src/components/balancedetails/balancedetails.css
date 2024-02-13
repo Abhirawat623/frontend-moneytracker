@@ -1,21 +1,21 @@
-.balancedetails-container{
-    background-color: rgb(226, 221, 221);
-    min-width: 100vh;
-    min-height: 40vh;
+.balancedetails-container {
+  background-color: rgb(226, 221, 221);
+  min-width: 100vh;
+  min-height: 40vh;
 }
 
-.income-container{
-    background-color:rgb(39, 109, 39);
-    color: white;
-    min-height: 2rem;
-    padding: 6px;
-    margin: 10px;
+.income-container {
+  background-color: rgb(39, 109, 39);
+  color: white;
+  min-height: 2rem;
+  padding: 6px;
+  margin: 10px;
 }
 
-.expense-container{
-    background-color:rgb(148, 38, 38);
-    color: white;
-    min-height: 2rem;
-    padding: 6px;
-    margin: 10px;
+.expense-container {
+  background-color: rgb(148, 38, 38);
+  color: white;
+  min-height: 2rem;
+  padding: 6px;
+  margin: 10px;
 }

@@ -1,7 +1,5 @@
 import { useContext, createContext, useState } from "react";
-
 const TransactionContext = createContext(null);
-
 const TransactionProvider = ({ children }) => {
   //for value
   const [value, setValue] = useState("expense");
@@ -15,11 +13,32 @@ const TransactionProvider = ({ children }) => {
     amount: 0,
     description: "",
   });
+  //for adding one transaction details
+  const handleAddTransaction = (currentforminput) => {
+    if (currentforminput.description && currentforminput.amount) {
+      setTransactions([
+        ...transactions,
+        { ...currentforminput, id: Date.now() },
+      ]);
+    }
+  };
+  console.log("hi" + { transactions });
 
   return (
     <TransactionContext.Provider
-      value={{ formInputs,transactions,value,totalExpenses,totalIncome,
-        setFormInputs,setTotalExpenses,setTotalIncome,setTransactions,setValue }}
+      value={{
+        formInputs,
+        transactions,
+        value,
+        totalExpenses,
+        totalIncome,
+        setFormInputs,
+        setTotalExpenses,
+        setTotalIncome,
+        setTransactions,
+        setValue,
+        handleAddTransaction,
+      }}
     >
       {children}
     </TransactionContext.Provider>

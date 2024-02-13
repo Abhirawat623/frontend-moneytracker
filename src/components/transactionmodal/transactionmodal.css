@@ -31,17 +31,17 @@
   color: white;
   font-size: 1.1rem;
   gap: 5px;
-  
 }
 
-.input-radios{
-display: flex;
-flex-direction: column;
-justify-content: center;
-padding: 2px;
+.input-radios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px;
 }
 
-.description, .amount {
+.description,
+.amount {
   flex: 1;
   height: 30px;
   padding: 5px;
