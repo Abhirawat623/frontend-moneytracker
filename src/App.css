@@ -1,8 +1,8 @@
 /* root properties */
 :root{
-  --primary-color: #3a4750;
+  --primary-color: ;
   --border-color:rgb(22, 4, 4);
-  --hover-color: rgb(123, 125, 241);
+  --hover-color:#3a4750;
   --shadow-color:rgb(131, 131, 131);
 }
 
