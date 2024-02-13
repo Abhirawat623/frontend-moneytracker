@@ -2,7 +2,7 @@ import "./balancebox.css";
 import { useTransaction } from "../../context";
 export const Balancebox=()=>{
  //transaction context
- const {income} =useTransaction()
+ const {income,expense} =useTransaction()
 
 
     return(
@@ -20,7 +20,7 @@ export const Balancebox=()=>{
               </div>
               <div className="d-flex dir-col">
               <span className="text-s expence-buttons"> Total Expense</span>
-                <span className="text-m bold text-center"> Rs. </span>
+                <span className="text-m bold text-center"> Rs. {expense}</span>
               </div>
             </div>
            

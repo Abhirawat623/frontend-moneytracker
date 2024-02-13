@@ -1,64 +1,73 @@
 .transaction-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin: auto auto;
-    position: absolute;
-    top:-0.7rem;
-    left: 26rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin: auto auto;
+  position: absolute;
+  top: -0.7rem;
+  left: 26rem;
+}
+
+.transaction-form form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+  height: 80px;
+  gap: 5px;
+  border: 1px solid #ccc;
+  background-color: #3b384d;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.input-radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  gap: 5px;
   
-  .transaction-form form {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 600px;
-    height: 50px;
-    gap: 5px;
-    border: 1px solid #ccc;
-    background-color: #3B384D;
-    border-radius: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
-  .transaction-form input,
-  .transaction-form select {
-    flex: 1;
-    height: 30px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-  }
-  
-  .transaction-form input:focus,
-  .transaction-form select:focus {
-    outline: none;
-    box-shadow: 0 0 2px 1px #007bff;
- 
-  }
-  
-  .add-button {
-    min-width: 50px;
-    height: 30px;
-    border: none;
-    border-radius: 10px;
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-   
-    cursor: pointer;
-  }
-  
-  .transaction-form .add-button:hover {
-    background-color: #0069d9;
-  }
-  
-  .transaction-form .add-button:disabled {
-    background-color: #c0c0c0;
-    cursor: not-allowed;
-  }
+}
+
+.input-radios{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 2px;
+}
+
+.description, .amount {
+  flex: 1;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.add-button {
+  min-width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.transaction-form .add-button:hover {
+  background-color: #0069d9;
+}
+
+.transaction-form .add-button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}

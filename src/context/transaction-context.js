@@ -1,19 +1,25 @@
-import { useContext, createContext, useReducer } from "react";
-import { transactionReducer } from "../reducer/transaction-reducer";
-const initialValue = {
-  income: "1",
-  expense: "1",
-};
+import { useContext, createContext, useState } from "react";
 
-const TransactionContext = createContext(initialValue);
+const TransactionContext = createContext(null);
 
 const TransactionProvider = ({ children }) => {
-  const [{ income, expense }, transactionDispatch] =
-    useReducer(transactionReducer, initialValue);
+  //for value
+  const [value, setValue] = useState("expense");
+  const [totalExpenses, setTotalExpenses] = useState(0);
+  const [totalIncome, setTotalIncome] = useState(0);
+  //all transactions
+  const [transactions, setTransactions] = useState([]);
+  //for form data
+  const [formInputs, setFormInputs] = useState({
+    type: "income",
+    amount: 0,
+    description: "",
+  });
 
   return (
     <TransactionContext.Provider
-      value={{ income, expense, transactionDispatch }}
+      value={{ formInputs,transactions,value,totalExpenses,totalIncome,
+        setFormInputs,setTotalExpenses,setTotalIncome,setTransactions,setValue }}
     >
       {children}
     </TransactionContext.Provider>

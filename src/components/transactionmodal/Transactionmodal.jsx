@@ -3,30 +3,36 @@ import { useTransaction } from "../../context/index";
 
 export const Transactionmodal=()=>{
 //transaction context
-const {transactionDispatch} = useTransaction()
-  //income adding
- const handleIncomeChange=(event)=>{
-transactionDispatch({
-  type:"INCOME",
-  payload:event.target.value
-})}
- //expense adding
-//  const handleExpenseChange =(event)=>{
-//   transactionDispatch({
-//     type:"EXPENSE",
-//     payload:event.target.value
-//   })
-//  }
+const {formInputs,setFormInputs} = useTransaction()
+
+const handleFormChange=(event)=>{
+  setFormInputs({
+    ...formInputs,
+    [event.target.name]:event.target.value,
+    
+  })
+}
+console.log(formInputs)
+
     return(
         <div className="transaction-form">
   <form>
-    <input type="text" placeholder="Description" class="description-input"/>
-    <input type="number" onChange={handleIncomeChange} placeholder="Amount" class="amount-input"/>
-    <select className="type-input">
-      <option value="income" >Income</option>
-      <option value="expense" >Expense</option>
-    </select>
-    <button type="submit" className="add-button"><h2>+</h2></button>
+    <input type="text" placeholder="Description" className="description"
+    onChange={handleFormChange}/>
+    <input type="number" name="amount" placeholder="Amount" className="amount"
+    onChange={handleFormChange}/>
+    <div className="input-radios" >
+    <div className="input-radio">
+         <input type="radio" checked={formInputs.type==="expense"} value="expense" name="type" onChange={handleFormChange} />
+        <label>Expense</label>
+         </div>
+         <div className="input-radio">
+         <input type="radio" checked={formInputs.type==="income"} value="income" name="type" onChange={handleFormChange} />
+        <label>Income</label>
+         </div>
+         
+    </div>
+    <button type="submit" className="add-button" ><h2>+</h2></button>
   </form>
 </div>
     )
