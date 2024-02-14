@@ -1,5 +1,5 @@
 @import url("./components/transactionmodal/transactionmodal.css");
-
+@import url("./components/balancedetails/balancedetails.css");
 /* root properties */
 :root {
   --primary-color: ;

@@ -6,7 +6,7 @@ import {
   Balancedetails,
   Transactionmodal,
 } from "../../components/index";
-import { useModal } from "../../context/index";
+import { useModal,useTransaction } from "../../context/index";
 export const Home = () => {
   //modal
   const { modalBox, hideModal } = useModal();
@@ -14,6 +14,9 @@ export const Home = () => {
   const handleHomeClick = () => {
     hideModal();
   };
+//for transaction data
+const {transactions} = useTransaction();
+
   return (
     <div className="Home-container d-flex dir-col justify-center ">
       <Navbar />
@@ -25,7 +28,17 @@ export const Home = () => {
         <Balancechart />
       </div>
       <div>
-        <Balancedetails />
+        <div className="d-flex dir-row gap-m justify-space padding-s">
+          
+            <Balancedetails list={transactions.filter((item)=>item.type==="income")} type={"income"}/>
+         
+         
+            <Balancedetails list={transactions.filter((item)=>item.type==="expense")} type={"expense"}/>
+
+          
+        </div>
+
+        
         {modalBox && <Transactionmodal />}
       </div>
     </div>
