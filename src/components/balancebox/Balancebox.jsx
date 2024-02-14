@@ -7,6 +7,7 @@ export const Balancebox = () => {
   //values
   const {
     transactions,
+    setTransactions,
     totalExpenses,
     totalIncome,
     setTotalExpenses,
@@ -29,6 +30,10 @@ export const Balancebox = () => {
 
   console.log(transactions);
 
+  const handleClearAll=()=>{
+    setTransactions([])
+  }
+
   return (
     <div
       className="balance-container d-flex dir-col gap-m padding-s
@@ -37,7 +42,7 @@ export const Balancebox = () => {
       <div className="d-flex dir-col gap-s justify-center ">
         <div className="d-flex dir-col ">
           <span className="text-s expence-buttons "> Balance</span>
-          <span className="text-m bold text-center"> Rs. 10000</span>
+          <span className="text-m bold text-center">{totalIncome-totalExpenses}</span>
         </div>
         <div className="d-flex dir-col ">
           <span className="text-s expence-buttons"> Total Income</span>
@@ -48,6 +53,7 @@ export const Balancebox = () => {
           <span className="text-m bold text-center"> Rs. {totalExpenses}</span>
         </div>
       </div>
+      <button className="clear-btn" onClick={handleClearAll}>Clear All</button>
     </div>
   );
 };

@@ -1,8 +1,10 @@
 import "./transactionmodal.css";
-import { useTransaction } from "../../context/index";
+import { useTransaction,useModal } from "../../context/index";
 export const Transactionmodal = () => {
   //transaction context
   const { formInputs, setFormInputs, handleAddTransaction } = useTransaction();
+  //modal
+  const {hideModal} =useModal();
   //changes in form
   const handleFormChange = (event) => {
     setFormInputs({
@@ -16,6 +18,7 @@ export const Transactionmodal = () => {
     event.preventDefault();
     //adding single transaction to all
     handleAddTransaction(formInputs);
+    hideModal();
   };
 
   return (
