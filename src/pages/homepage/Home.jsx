@@ -30,7 +30,7 @@ const {transactions} = useTransaction();
       <div>
         <div className="d-flex dir-row gap-m justify-space padding-s">
           
-            <Balancedetails list={transactions.filter((item)=>item.type==="income")} type={"income"}/>
+            <Balancedetails list={transactions.filter((item)=>item.type==="income")} type={"income" }/>
          
          
             <Balancedetails list={transactions.filter((item)=>item.type==="expense")} type={"expense"}/>
