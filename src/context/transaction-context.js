@@ -24,6 +24,8 @@ const TransactionProvider = ({ children }) => {
   };
   console.log("hi" + { transactions });
 
+
+
   return (
     <TransactionContext.Provider
       value={{

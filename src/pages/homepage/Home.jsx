@@ -5,6 +5,7 @@ import {
   Balancechart,
   Balancedetails,
   Transactionmodal,
+  History
 } from "../../components/index";
 import { useModal,useTransaction } from "../../context/index";
 export const Home = () => {
@@ -35,7 +36,7 @@ const {transactions} = useTransaction();
          
             <Balancedetails list={transactions.filter((item)=>item.type==="expense")} type={"expense"}/>
 
-          
+          <History/>
         </div>
 
         

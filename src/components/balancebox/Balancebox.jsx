@@ -26,7 +26,8 @@ export const Balancebox = () => {
     });
     setTotalIncome(income);
     setTotalExpenses(expense);
-  }, [transactions, setTotalExpenses, setTotalIncome]);
+    
+  }, [transactions , setTotalExpenses, setTotalIncome]);
 
   console.log(transactions);
 
@@ -42,7 +43,7 @@ export const Balancebox = () => {
       <div className="d-flex dir-col gap-s justify-center ">
         <div className="d-flex dir-col ">
           <span className="text-s expence-buttons "> Balance</span>
-          <span className="text-m bold text-center">{totalIncome-totalExpenses}</span>
+          <span className="text-m bold text-center">Rs. {totalIncome-totalExpenses}</span>
         </div>
         <div className="d-flex dir-col ">
           <span className="text-s expence-buttons"> Total Income</span>

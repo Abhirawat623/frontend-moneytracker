@@ -18,11 +18,11 @@ export const Transactionmodal = () => {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     //adding single transaction to all
+ 
     handleAddTransaction(formInputs);
     transactionsHandle(formInputs)
     hideModal();
   };
-
   return (
     <div className="transaction-form">
       <form onSubmit={handleFormSubmit}>
