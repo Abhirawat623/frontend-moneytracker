@@ -33,9 +33,11 @@ useEffect(
       >
 
       {history.map((item) => (
-        <div className="history-container d-flex dir-row justify-center justify-space round text-s" key="index">
+        <div className={` d-flex dir-row justify-center justify-space round text-s
+         ${item.type==="expense"?"expense-container":"income-container"}`} key="index">
           <span>{item.description}</span>
-          <span>Rs. {item.amount}</span>
+          {item.type==="expense"?(<span>-Rs. {item.amount}</span>):(<span>Rs. {item.amount}</span>)}
+          
         </div>
       ))}</Carousel>
     </div>
